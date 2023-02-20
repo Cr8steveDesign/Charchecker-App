@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CharCheckr Web App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div><input id="switch" type="button" value="Switch Color" /></div>
+
+        <h1>CharCheckr</h1>
+        <p>
+          Analyze your text to know the number of words, characters, consonants,
+          vowels, numbers and words longer than 5 letters! 😜
+        </p>
+      </header>
+
+      <section class="user-data">
+        <p class="welcome">Welcome, <span id="userName">User</span></p>
+        <textarea
+          class="input"
+          type="text"
+          id="userWord"
+          placeholder="Enter or paste text here...😁"
+          required
+        ></textarea>
+
+        <div class="liveChk">
+          <h2 id="liveCheck">0</h2>
+          <p class="subtexts">CHARS</p>
+        </div>
+        <input type="button" id="generate" value="GENERATE REPORT" /><span
+          >........</span
+        >
+        <input type="button" id="cleartext" value="CLEAR TEXT" />
+      </section>
+
+      <br />
+      <section class="report-holder">
+        <!-- TOP REPORTS AFTER HERE-->
+        <div class="reports-top">
+          <div><h2 id="wordNo">00</h2></div>
+          <p class="subtexts">WORDS</p>
+        </div>
+
+        <div class="reports-top">
+          <div><h2 id="vowels">00</h2></div>
+          <p class="subtexts">VOWELS</p>
+        </div>
+
+        <div class="reports-top">
+          <div><h2 id="consonants">00</h2></div>
+          <p class="subtexts">CONSONANTS</p>
+        </div>
+
+        <!-- BOTTOM REPORTS AFTER HERE-->
+
+        <div class="reports-btm">
+          <div><h2 id="longWord">00</h2></div>
+          <p class="subtexts">WORDS ><br />5 LETTERS</p>
+        </div>
+
+        <div class="reports-btm">
+          <div><h2 id="numbers">00</h2></div>
+          <p class="subtexts">NUMBERS</p>
+        </div>
+
+        <div class="reports-btm" style="background-color: rgb(245, 89, 28)">
+          <div>
+            <!-- <h2 id="spaces">CLICK!</h2> -->
+          </div>
+          <p id="music" class="subtexts">
+            <br />PLAY<br />
+            BACK-<br />GROUND MUSIC
+          </p>
+        </div>
+        <footer>
+          <p>
+            Designed and Developed by
+            <a
+              href="https://wa.me/message/SMUOSKRQJXIYO1"
+              title="Providing creative digital solutions"
+            >
+              Cr8SteveDesign</a
+            >
+          </p>
+        </footer>
+      </section>
+    </div>
+    <script src="scripts2.js"></script>
+  </body>
+</html>
